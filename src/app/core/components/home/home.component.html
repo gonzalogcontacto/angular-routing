@@ -1,0 +1,9 @@
+<input [(ngModel)]="dni">
+
+<div *ngIf="checkDni(); else noDNI">
+    EL DNI  TIENE CONTENIDOO
+</div>
+
+<ng-template #noDNI>
+    EL DNI NO TIENE CONTENIDO
+</ng-template>
